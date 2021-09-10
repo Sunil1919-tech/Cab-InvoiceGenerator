@@ -1,21 +1,19 @@
 package com.bridgelabz;
 
-import java.util.Objects;
-
 /**
  * declaring the instant variables as final
  */
 public class InvoiceSummary {
+
     public final double averageFarePerRide;
     public final int numberOfRides;
     public final double totalFare;
-
+//parameterized constructor
     public InvoiceSummary(int numberOfRides, double totalFare) {
         this.numberOfRides = numberOfRides;
         this.totalFare = totalFare;
         this.averageFarePerRide = this.totalFare / this.numberOfRides;
     }
-
     /*
     method overridden
     created an Object and used equals method
